@@ -12,10 +12,14 @@
   "permissions": [
     "https://github.com/*"
   ],
+  "optional_permissions" : [
+     "http://*/"
+  ],
+  "options_page" : "content/options.html",	
   "content_scripts": [
     {
       "matches": [
-        "https://github.com/*"
+        "<all_urls>"
       ],
       "css": [
         "content/inject.css"
